@@ -7,3 +7,4 @@ Get the course [here](https://javascript30.com/)
 ### Completed so far: 
 - Javascript Drum Kit 
 - JS and CSS Clock 
+- CSS Variables
