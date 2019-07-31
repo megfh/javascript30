@@ -9,3 +9,4 @@ Get the course [here](https://javascript30.com/)
 2. JS and CSS Clock 
 3. CSS Variables
 4. Array Cardio Day 1
+5. Flex Panel Gallery
