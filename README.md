@@ -12,3 +12,4 @@ Get the course [here](https://javascript30.com/)
 5. Flex Panel Gallery
 6. Type Ahead
 7. Array Cardio Day 2
+8. Fun with HTML5 Canvas 
