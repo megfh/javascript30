@@ -13,4 +13,5 @@ Get the course [here](https://javascript30.com/)
 6. Type Ahead
 7. Array Cardio Day 2
 8. Fun with HTML5 Canvas
-9. Dev Tools Domination 
+9. Dev Tools Domination
+10. Hold Shift and Check Checkboxes 
