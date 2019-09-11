@@ -8,23 +8,39 @@
   <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
 </head>
 <body>
+  <div id="light"></div>
   <div id="dumbledore">
-    <p class="quote" id="1">Happines can be found, even in the darkest of times, </p>
-    <p class="quote" id="2">if one only remembers </p>
-    <p class="quote" id="3">to turn on the light</p>
+    <p class="quote" id="part1">Happines can be found, even in the darkest of times, </p>
+    <p class="quote" id="part2">if one only remembers </p>
+    <p class="quote" id="part3">to turn on the light</p>
   </div>
 
 <script>
-  const pressed = []; 
+  let pressed = []; 
   const secretCode = "lumos"; 
+  const superSecret = "LUMOS MAXIMA"
+  let wand = document.getElementById("light"); 
+  let quote = document.getElementById("dumbledore"); 
   window.addEventListener("keyup", (e) => {
     pressed.push(e.key); 
     // keep array length equal to length of secret code, discarding oldest entries 
-    pressed.splice((-secretCode.length-1), (pressed.length-secretCode.length)); 
+    pressed.splice((-superSecret.length-1), (pressed.length-superSecret.length)); 
     let code = pressed.join(""); 
-    console.log(code);
-    if (code == secretCode) {
-      console.log("SECRET UNLOCKED"); 
+    if (code == superSecret) {
+      wand.classList.add("lumosMaxima"); 
+      quote.classList.add("faded"); 
+      setTimeout(() => {
+        wand.classList.remove("lumosMaxima")
+        quote.classList.remove("faded"); 
+      }, 5000); 
+    } else if (code.includes(secretCode)) {
+      wand.classList.add("lumos"); 
+      quote.classList.add("faded"); 
+      setTimeout(() => {
+        wand.classList.remove("lumos")
+        quote.classList.remove("faded"); 
+        pressed.splice(-5, 5); 
+      }, 5000); 
     }
   })
 </script>
