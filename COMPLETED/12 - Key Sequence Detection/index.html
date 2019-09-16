@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Key Detection</title>
+  <title>Magic</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Tangerine&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="light"></div>
   <div id="dumbledore">
-    <p class="quote" id="part1">Happines can be found, even in the darkest of times, </p>
+    <p class="quote" id="part1">Happiness can be found, even in the darkest of times, </p>
     <p class="quote" id="part2">if one only remembers </p>
     <p class="quote" id="part3">to turn on the light</p>
   </div>
+  <a id="code" href="https://github.com/megfh/magic" target="_blank">See the code</a>
+
 
 <script>
   let pressed = []; 
   const secretCode = "lumos"; 
   const superSecret = "LUMOS MAXIMA"
+  console.log(`Try casting a spell to shed some light on the situation, like "${secretCode}" or "${superSecret}"`); 
   let wand = document.getElementById("light"); 
   let quote = document.getElementById("dumbledore"); 
   window.addEventListener("keyup", (e) => {
@@ -39,6 +41,7 @@
       setTimeout(() => {
         wand.classList.remove("lumos")
         quote.classList.remove("faded"); 
+        // remove "lumos" from end of array to avoid duplicate animations
         pressed.splice(-5, 5); 
       }, 5000); 
     }
