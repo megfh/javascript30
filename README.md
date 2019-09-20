@@ -19,3 +19,4 @@ Get the course [here](https://javascript30.com/)
 12. [**Key Sequence Detection**](https://github.com/megfh/magic)
 13. Slide in on Scroll 
 14. JavaScript References VS Copying 
+15. Local Storage
