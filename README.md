@@ -22,3 +22,4 @@ Get the course [here](https://javascript30.com/)
 15. Local Storage
 16. Mouse Move Shadow
 17. Sort Without Articles
+18. Adding Up Times with Reduce
